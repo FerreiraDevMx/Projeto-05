@@ -1,0 +1,935 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html ,body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*Inicio do header*/
+
+header{
+    padding: 20px 2%;
+}
+
+header .logo{
+    float: left;
+}
+
+header .logo img{
+    width: 208px;
+    height: 82px;
+}
+
+header nav.menu-desktop{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+
+header nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    font-size: 23px;
+    font-style: italic;
+}
+
+header nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+    
+}
+
+header nav.menu-mobile{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-image: url(../imagens/icon_menu.png);
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+}
+
+header nav.menu-mobile ul{
+    list-style-type: none;
+    width: 100%;
+	margin-top: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+    display: none;
+    z-index: 1;
+}
+
+
+
+header nav.menu-mobile ul li{
+    float: left;
+    font-size: 20px;
+    background-color: #EB2D2D;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid white;
+    font-style: italic;
+}
+
+header nav.menu-mobile a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav.menu-mobile ul li:hover{
+    opacity: 0.8;
+}
+
+/*Fim da Header*/
+/*Inicio da section Banner*/
+section.banner{
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    background-color: black;
+    background-image: url(../imagens/bg.jpg);
+    background-size: 85% auto;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+/*Fim da section Banner*/
+/*Inicio da section Veiculo Destaque*/
+
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+
+section.veiculos-destaque .container{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.line-titulo{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.ln1{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 20px;
+    background-color: black;
+}
+
+.line-titulo h2{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.vitrine-destaque{
+    float: left;
+    width: 33.3%;
+    margin-top: 90px;
+}
+
+.img-vitrine{
+    width: 100%;
+    height: 250px;
+    border: 10px solid white;
+}
+
+.img-vitrine img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descricao-vitrine h2{
+    margin-top: 8px;
+    font-size: 24px;
+    font-style: italic;
+    color: black;
+}
+
+.descricao-vitrine p{
+    margin-top: 8px;
+    font-size: 19px;
+    font-style: italic;
+    color: #353535;
+}
+
+.descricao-vitrine input[type=button]{
+    margin-top: 8px;
+    width: 152px;
+    height: 49px;
+    text-align: center;
+    background-color: #EB2D2D;
+    border: 0;
+    color: white;
+    font-size: 24px;
+    line-height: 49px;
+    font-style: italic;
+}
+
+/*Fim da section Veiculo Destaque*/
+
+/*Inicio da section Servico Depoimento*/
+
+section.servico-depoimento{
+    display: flex;
+}
+
+section.servico-depoimento .servico{
+    width: 50%;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+}
+
+
+.servico-wraper{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.lista{
+    display: inline-block;
+    text-align: left;
+}
+
+.servico-wraper h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: left;
+    padding-left: 20%;
+}
+
+.servico-wraper ul{
+    margin-top: 20px;
+    display: inline-block;
+    list-style-position: inside;
+}
+
+.servico-wraper li{
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.servico-wraper a{
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.btn1{
+    width: 130px;
+    height: 50px;
+    line-height: 45px;
+    background-color: #EB2D2D;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-bottom: 5px solid #B21E1E;
+    font-style: italic;
+}
+
+.depoimento{
+    background-color: #EB2D2D;
+    width: 50%;
+    text-align: center;
+    padding: 90px;
+    color: white;
+}
+
+.depoimento h2{
+    font-size: 35px;
+    font-style: italic;
+    text-align: left;
+}
+
+.depoimento-wraper{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.navigation{
+    margin-top: 20px;
+}
+.navigation-arrow{
+    float: left;
+}
+
+.navigation .left{
+    background-image: url(../imagens/arrow-left.png);
+    width: 14px;
+    height: 28px;
+    background-color: transparent;
+    border: 0;
+}
+
+.navigation .right{
+    background-image: url(../imagens/arrow-right.png);
+    width: 14px;
+    height: 28px;
+    background-color: transparent;
+    border: 0;
+    margin-left: 10px;
+}
+
+.navigation .navigation-nome{
+    float: right;
+    color: black;
+    font-weight: bold;
+}
+
+/*Inicio da section Contato*/
+section.contato{
+    padding: 90px 2%;
+}
+
+section.contato > .container{
+    width: 100%;
+    max-width: 760px;
+    text-align: center;
+}
+
+section.contato form input[type="text"]{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 12px;
+    color: #ccc;
+    font-size: 24px;
+}
+
+section.contato form input[type="text"].g1{
+    width: 49%;
+    float: left;
+}
+
+section.contato form input[type="text"].g2{
+    width: 49%;
+    float: right;
+}
+
+section.contato form textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    padding: 8px;
+    color: #ccc;
+    margin-top: 12px;
+}
+
+section.contato > .container input[type="submit"]{
+    background-color: #EB2D2D;
+    border: 0;
+    border-bottom: 5px solid #B21E1E;
+    width: 100px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+}
+
+/*Fim da section Contao*/
+
+/*Inicio da footer*/
+footer{
+    padding: 35px 2%;
+    background-color: #252525;
+}
+
+nav{
+    float: left;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    font-size: 24px;
+    font-style: italic;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 24px;
+}
+
+/*Fim da footer*/
+/***** fim da Página index ******/
+
+
+/***** Inicio da Página Eventos ******/
+
+.borda{
+    width: 100%;
+    height: 5px;
+    background-color: #EB2D2D;
+}
+
+section.eventos{
+    padding: 90px 2%;
+}
+
+
+
+section.eventos > .container1{
+    padding-bottom: 90px ;
+}
+
+section.eventos .filtro{
+    width: 27%;
+    float: left;
+}
+
+section.eventos .filtro h2{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+nav.filtro-mes  ul  li {
+    float: none;
+}
+
+nav.filtro-mes ul li input{
+    margin-right: 8px;
+}
+  
+section.eventos .event{
+    float: right;
+    width: 73%;
+
+}
+
+section.eventos .event-single{
+    width: 33.3%;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+section.eventos .img-event-single{
+    width: 100%;
+    height: 12vw;
+}
+
+section.eventos .img-event-single img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.eventos .event-single-wraper h2{
+    font-size: 24px;
+    font-style: italic;
+    color: black;
+    margin-top: 8px;
+}
+
+section.eventos .event-single-wraper p{
+    font-size: 19px;
+    color: black;
+    margin-top: 3px;
+}
+
+section.eventos .event-single-wraper p.data{
+    color: #EB2D2D;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*section.eventos input[type="button"]{
+    color: white;
+    font-size: 24px;
+    width: 153px;
+    background-color: #EB2D2D;
+    border: 0;
+    border-bottom: 5px solid #B21E1E;
+    line-height: 45px;
+    margin-top: 10px;
+    
+    font-style: italic;
+}*/
+
+section.eventos a.button{
+    color: white;
+    padding: 5px 15px;
+    font-size: 24px;
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-style: italic;
+}
+/***** fim da Página Eventos ******/
+
+/***** Inicio da Página Galeria ******/
+
+section.titulo-pagina{
+    padding: 90px 2%;
+}
+
+section.banner-destaque{
+    margin-bottom: 30px;
+}
+
+section.banner-destaque, section.imagens-galeria > .container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+section.banner-destaque .img-banner-destaque{
+    width: 100%;
+    height: 30vw;
+    border: 10px solid #ccc;
+}
+
+section.banner-destaque .img-banner-destaque img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.banner-destaque .img-banner-destaque p{
+    position: relative;
+    bottom: 40%;
+    right: -10px;
+    float: right;
+    width: 150px;
+    height: 45px;
+    background-color: #EB2D2D;
+    font-size: 28px;
+    line-height: 40px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+section.imagens-galeria{
+    padding: 0 2%;
+    padding-bottom: 90px;
+}
+
+section.imagens-galeria .img-galeria-single{
+    width: 25%;
+    float: left;
+    height: 12vw;
+    border: 5px solid white;
+    background-color: #ccc;
+}
+
+section.imagens-galeria .img-galeria-single img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/***** fim da Página Galeria ******/
+
+/***** Inicio da Página Single-Eventos ******/
+.container1{
+    width: 100%;
+    padding: 90px 2%;
+}
+
+section.single-evento{
+    padding: 0 2% 90px 2%;
+}
+
+section.single-evento > .container{
+    width: 100%;
+    max-width: 800px;
+}
+
+section.single-evento .img-evento{
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+}
+
+section.single-evento .single-evento-wraper{
+    width: 100%;
+    margin-top: 40px;
+}
+
+section.single-evento .single-evento-wraper h2{
+    font-size: 38px;
+    color: black;
+    font-style: italic;
+}
+
+section.single-evento .single-evento-wraper p{
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+}
+
+section.single-evento .single-evento-wraper h2.local{
+    font-size: 38px;
+    color: #353535;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+section.single-evento .single-evento-wraper a{
+    font-size: 18px;
+    color: #353535;
+}
+
+section.single-evento .single-evento-wraper a:hover{
+    color: #EB2D2D;
+}
+/***** fim da Página Single-Eventos ******/
+
+
+/***** Inicio da Página Sobre ******/
+
+section.sobre{
+    padding-bottom: 90px;
+}
+
+section.sobre > .container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+section.sobre .foto-banner-sobre{
+    width: 100%;
+    height: 40vw;
+    max-height: 330px;
+}
+
+section.sobre .foto-banner-sobre img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+section.sobre .sobre-wraper{
+    margin-top: 30px;
+}
+
+section.sobre .sobre-wraper h2{
+    font-size: 38px;
+}
+
+section.sobre .sobre-wraper p{
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+section.sobre .dono-wraper{
+    width: 100%;
+
+}
+
+section.sobre .foto-dono{
+    float: left;
+    width: 30%;
+    background-color: #ccc;
+    margin-top: 30px;
+}
+
+section.sobre .foto-dono img{
+    width: 100%;
+    object-fit: cover;
+}
+
+section.sobre .descricao-dono-wraper{
+    float: right;
+    margin-top: 30px;
+    padding-left: 15px;
+    width: 70%;
+}
+
+section.sobre .descricao-dono-wraper p{
+    font-size: 24px;
+    color: black;
+}
+
+/***** fim da Página Sobre ******/
+
+
+@media screen and (max-width: 1150px){
+
+
+    .servico-wraper h2{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .servico-wraper a{
+        margin: 20px auto 0 auto;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .img-vitrine{
+        height: 25.1vw;
+    }
+}
+
+@media screen and (max-width: 850px){
+    footer nav{
+        display: none;
+    }
+
+    footer p{
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.banner{
+        height: 60vw;
+        background-size: 98% auto;
+    }
+
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    header nav.menu-mobile{
+        display: block;
+        margin-top: 20px;
+    }
+
+    /*header nav.menu-mobile:hover ul{
+        display: block;
+    }*/
+    
+    .vitrine-destaque{
+        float: left;
+        width: 50%;
+    }
+    
+    .vitrine-destaque:nth-last-child(3){
+        display: none;
+    }
+
+    .img-vitrine{
+        width: 100%;
+        height: auto;
+    }
+
+    .img-vitrine img{
+        width: 100%;
+    }
+
+    section.servico-depoimento{
+        display: block;
+    }
+
+    section.servico-depoimento .servico{
+        width: 100%;
+        float: none;
+    }
+    
+    .depoimento{
+        width: 100%;
+        float: none;
+    }
+
+    .depoimento h2{
+        text-align: center;
+    }
+
+    section.contato form input[type="text"].g1{
+        width: 100%;
+        float: none;
+    }
+    
+    section.contato form input[type="text"].g2{
+        width: 100%;
+        float: none;
+    }
+
+
+    /*Página Evento*/
+    section.eventos .filtro{
+        width: 100%;
+        float: none;
+    }
+    
+    section.eventos .filtro h2{
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    
+    nav.filtro-mes  ul  li {
+        float: left;
+        margin-left: 15px;
+    }
+    
+    nav.filtro-mes ul li input{
+        margin-right: 3px;
+    }
+
+    .vaco{
+        clear: both;
+        height: 40px;
+    }
+      
+    section.eventos .event{
+        float: none;
+        width: 100%;
+    }
+    
+    section.eventos .event-single{
+        width: 50%;
+    }
+
+    section.eventos .img-event-single{
+        width: 100%;
+        height: 25vw;
+    }
+
+    section.imagens-galeria .img-galeria-single{
+        width: 50%;
+        height: 20vw;
+    }
+    
+}
+
+@media screen and (max-width: 568px) {
+    
+
+    .vitrine-destaque{
+        margin: 50px auto 0 auto;
+        float: none;
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+    
+    .vitrine-destaque:nth-last-child(3){
+        display: block;
+    }
+
+    section.eventos .event{
+        float: none;
+        width: 100%;
+    }
+    
+    section.eventos .event-single{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+
+    section.eventos .img-event-single{
+        width: 100%;
+        height: 50vw;
+    }
+
+    section.imagens-galeria .img-galeria-single{
+        width: 100%;
+        float: none;
+        height: 40vw;
+        border: 5px solid white;
+        background-color: #ccc;
+    }
+
+    section.single-evento .img-evento{
+        width: 100%;
+        height: 50vw;
+        background-color: #ccc;
+    }
+    
+    section.single-evento .single-evento-wraper{
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    section.sobre .sobre-wraper h2{
+        text-align: center;
+    }
+
+    section.sobre .sobre-wraper p{
+        text-align: justify;
+    }
+    
+    section.sobre .foto-dono{
+        float: none;
+        margin: 0 auto;
+        width: 50%;
+        background-color: #ccc;
+        margin-top: 30px;
+    }
+    
+    section.sobre .foto-dono img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    section.sobre .descricao-dono-wraper{
+        float: none;
+        margin-top: 30px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    section.sobre .descricao-dono-wraper p{
+        text-align: justify;
+    }
+    
+}
